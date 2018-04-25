@@ -25,8 +25,6 @@ from mrcnn.config import Config
 
 import nucleus3
 
-%matplotlib inline 
-
 # Directory to save things such as logs and trained model
 ROOT_DIR = os.path.abspath('/home/user/ec2-user/histo')
 LOGS_DIR = os.path.join(ROOT_DIR, "logs")

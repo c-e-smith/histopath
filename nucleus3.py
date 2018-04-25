@@ -186,7 +186,7 @@ class NucleusDataset(utils.Dataset):
         # "train": use data from stage1_train minus the hard-coded list above
         # else: use the data from the specified sub-directory
         assert subset in ["train", "test", "val", "mask"]
-        dataset_dir = os.path.join("./data/", subset)
+        dataset_dir = os.path.join(dataset_dir, subset)
      
         glob = pathlib.Path(dataset_dir).glob('*.TIF')
         pathlist = sorted([x for x in glob])

@@ -63,7 +63,7 @@ DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 # Save submission files here
 RESULTS_DIR = os.path.join(ROOT_DIR, "results")
 
-VAL_IMAGE_IDS = []
+VAL_IMAGE_IDS = [i for i in range(10)]
 
 
 ############################################################

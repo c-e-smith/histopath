@@ -43,11 +43,11 @@ TEST_MODE = "training"
 
 config.display()
 
-# load validation data
-#dataset_val = nucleus3.NucleusDataset()
-#dataset_val.load_nucleus(DATASET_DIR, "stage1_test")
-#dataset_val.prepare()
 
+
+# training model initialize
+model = modellib.MaskRCNN(TEST_MODE, config,
+                          MODEL_DIR)
 # initialize weights
 init_with = WEIGHT_SRC
 
@@ -58,7 +58,7 @@ try:
 except:
     pass
 
-    # imagenet, nucleus, or last
+# imagenet, nucleus, or last
 if init_with == "imagenet":
     model.load_weights(model.get_imagenet_weights(), by_name=True)
 

@@ -166,7 +166,7 @@ class NucleusDataset(utils.Dataset):
         image_id = str(training_path)[22:28] + "_{}_{}".format(M,i)
         return image_id
 
-    def load_nucleus(self, dataset_dir, name="nucleus", subset):
+    def load_nucleus(self, dataset_dir, subset, name="nucleus"):
         """Load a subset of the nuclei dataset.
 
         dataset_dir: Root directory of the dataset

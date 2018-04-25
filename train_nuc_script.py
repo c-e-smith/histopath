@@ -112,5 +112,5 @@ nucleus3.args = args
 nucleus3.train(model) # be sure to edit "subset" categories in nucleus3
     
 # Save weights
-model_path = os.path.join(MODEL_DIR, "mask_rcnn_histo.h5")
-model.keras_model.save_weights(model_path)
+#model_path = os.path.join(MODEL_DIR, "mask_rcnn_histo.h5")
+#model.keras_model.save_weights(model_path)

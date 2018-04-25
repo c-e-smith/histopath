@@ -103,7 +103,7 @@ model = modellib.MaskRCNN(TEST_MODE, config,
                           MODEL_DIR)
 
 args = parser.parse_args(args=["train",DATASET_DIR,
-                               model.find_last()[1],LOGS_DIR,
+                               NUC_MODEL_PATH,LOGS_DIR,
                                "stage1_train"]
                         )
 

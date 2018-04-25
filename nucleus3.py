@@ -63,6 +63,7 @@ DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 # Save submission files here
 RESULTS_DIR = os.path.join(ROOT_DIR, "results")
 
+VAL_IMAGE_IDS = []
 
 
 ############################################################
@@ -81,7 +82,7 @@ class NucleusConfig(Config):
     NUM_CLASSES = 1 + 1  # Background + nucleus
 
     # Number of training and validation steps per epoch
-    STEPS_PER_EPOCH = (657 - len(VAL_IMAGE_IDS)) // IMAGES_PER_GPU
+    STEPS_PER_EPOCH = (58 - len(VAL_IMAGE_IDS)) // IMAGES_PER_GPU
     VALIDATION_STEPS = max(1, len(VAL_IMAGE_IDS) // IMAGES_PER_GPU)
 
     # Don't exclude based on confidence. Since we have two classes

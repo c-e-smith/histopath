@@ -45,7 +45,7 @@ import pathlib
 from imgaug import augmenters as iaa
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("/home/user/ec2-user/histopath")
+ROOT_DIR = os.path.abspath("/home/ec2-user/histopath")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library

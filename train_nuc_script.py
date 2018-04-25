@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("/users/ces/dropbox/repos/Mask_RCNN")
+#ROOT_DIR = os.path.abspath("./")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
@@ -26,7 +26,7 @@ from mrcnn.config import Config
 import nucleus3
 
 # Directory to save things such as logs and trained model
-ROOT_DIR = os.path.abspath('/home/user/ec2-user/histo')
+ROOT_DIR = os.path.abspath('/home/usr/ec2-user/histopath')
 LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 MODEL_DIR = os.path.join(ROOT_DIR, "model")
 DATASET_DIR = os.path.join(ROOT_DIR, "data")
